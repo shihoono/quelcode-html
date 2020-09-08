@@ -140,3 +140,74 @@ nav a:hover {
     height: 250px;
     object-fit: cover;
 }
+
+/* メイン */
+
+.main {
+    max-width: 800px;
+    margin: 35px auto 130px auto;
+}
+
+/* SNSアイコン */
+
+.sns-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.sns-icons ul {
+    list-style: none;
+    display: flex;
+}
+
+.sns-icons li {
+    list-style: none;
+    display: flex;
+    padding-left: 20px;
+}
+
+.sns-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sns-icons span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #666;
+    opacity: 0.8;
+    line-height: 24px;
+}
+
+
+/* メインコンテンツ */
+
+.main-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+article img {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.main-title img {
+    width: 22px;
+    height: 24px;
+    margin: 0 10px 0 0;
+    vertical-align: bottom;
+}
+
+h2.main-title {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+article p {
+    color: #333;
+    font-size: 1.6rem;
+    line-height: 2;
+    margin-bottom: 15px;
+}
