@@ -211,3 +211,51 @@ article p {
     line-height: 2;
     margin-bottom: 15px;
 }
+
+/* pdfダウンロード部分 */
+
+.show-pdf img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin: 0 2px;
+}
+
+.show-pdf {
+    width: 300px;
+    height: 70px;
+    background-color: #005bac;
+    color: #fff;
+    display: block;
+    padding: 10px 20px 10px 10px;
+    margin: 20px auto 80px;
+    /* font-size: 0; */
+    position: relative;
+    padding-right: 10px;
+}
+
+.show-pdf span {
+    font-size: 1.6rem;
+    font-weight: 300;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.show-pdf:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border: 0;
+    border-top: solid 1px #fff;
+    border-right: solid 1px #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    transform: rotate(45deg);
+}
+
+.show-pdf:hover {
+    opacity: 0.8;
+}
