@@ -259,3 +259,115 @@ article p {
 .show-pdf:hover {
     opacity: 0.8;
 }
+
+/* トピック選択一覧部分　*/
+
+.page-selector a{
+    color: #0c419a;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.prev-page {
+    float: left;
+    position: relative;
+    padding-left: 10px;
+}
+
+.prev-page:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 0;
+    border-bottom: solid 1px #000;
+    border-left: solid 1px #000;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -2px;
+    transform: rotate(45deg);
+}
+
+.next-page {
+    float: right;
+    position: relative;
+    padding-right: 10px;
+}
+
+.next-page:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 0;
+    border-top: solid 1px #000;
+    border-right: solid 1px #000;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -2px;
+    transform: rotate(45deg);
+}
+
+.prev-page, .next-page {
+    margin-bottom: 40px;
+}
+
+.strength-list {
+    clear: both;
+    background-color: #deecf8;
+    padding: 25px 20px 40px 20px;
+    margin-bottom: 60px;
+}
+
+.strength-list h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.strength-list ul {
+    list-style: none;
+}
+
+.list-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+.list-container li {
+    color: #0c419a;
+    font-size: 1.6rem;
+    line-height: 20px;
+    text-align: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.list-container li:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border: 0;
+    border-top: solid 1px #999;
+    border-right: solid 1px #999;
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    transform: rotate(45deg);
+    left: 5px;
+}
+
+.prev-page a:hover, .next-page a:hover {
+    text-decoration: underline;
+}
+
+.list-container li:hover {
+    background: #f4f4f4;
+}
