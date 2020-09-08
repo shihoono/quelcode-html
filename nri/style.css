@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+html {
+    cursor: default;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* ロゴとナビゲーション */
+
+.header {
+    display: grid;
+    grid-template-columns: 150px 1fr 200px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    z-index: 99;
+    background-color: #fff;
+}
+
+.company-logo img {
+    margin: 5px 0 5px 20%;
+    cursor: pointer;
+}
+
+
+.header ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+nav li {
+    padding-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #000;
+    vertical-align: middle;
+    line-height: 60px;
+    letter-spacing: -0.7px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #00196e;
+    padding-bottom: 20px;
+    color: #0c419a;
+}
+
+.header-tools img {
+    padding-top: 10px;
+}
+
+.header-tools button {
+    width: 60px;
+    height: 60px;
+}
+
+.header-tools li:hover {
+    opacity: 0.7;
+} 
